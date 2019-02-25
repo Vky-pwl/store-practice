@@ -35,10 +35,43 @@
         height: 100%;
         padding: 5px;
         box-sizing: border-box;
+        .card-summary{
+            overflow: auto;
+            height: 50%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .card{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width:100%;
+                height: 40px;
+                padding: 2px;
+                border: 1px solid #eee;
+                .state{
+                    opacity: 0.8;
+
+                }
+             .count{
+                    background: #eee;
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 2px;
+                }
+
+            }
+        }
 
         .card-container{
             display: flex;
             flex-wrap: wrap;
+            overflow: auto;
+            height: 50%;
             .card{
                 border: 1px solid #ddd;
                 border-radius: 50%;
