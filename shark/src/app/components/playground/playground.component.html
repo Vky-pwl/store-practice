@@ -1,33 +1,52 @@
 
     <app-main-header></app-main-header>
     <app-header></app-header>
-    <div class="container">
+    <div class="pg-container">
       <div class="main">
-          
+          <div class="view-screen">
+
+          </div>
+          <div class="action-container">
+              <div>
+                    <button type="button" class="btn btn-warning btn-sm mr-2">Mark for review</button>
+                    <button type="button" class="btn btn-info btn-sm mr-2">Clear</button>
+              </div>
+              <div>
+                    <button type="button" class="btn btn-primary btn-sm mr-2">Primary</button>
+                    <button type="button" class="btn btn-success btn-sm mr-2">Submit        </button>
+
+              </div>
+               
+                
+
+          </div>
         
       </div>
       <div class="side">
-          <div class="card-summary">
-                <div class="card">
-                    <div class="count"> 3</div>
-               <div class="state">Attepmt and marks for review</div>
+          <div class="pg-card-summary">
+                <div class="pg-card">
+                    <div class="count bg-danger text-white"> 3</div>
+                   <div class="state">Not Answered</div>
                 </div>
-                    <div class="card">
-                        <div class="count"> 3</div>
-                            <div class="state">Attepmt </div>
+                    <div class="pg-card">
+                        <div class="count bg-dark text-white"> 3</div>
+                            <div class="state">Not Visited </div>
                       </div>
-                      <div class="card">
-                        
+                      <div class="pg-card">
+                            <div class="count bg-warning text-white"> 3</div>
+                            <div class="state">Marked for review</div>
                           </div>
-                          <div class="card">
-                        
+                          <div class="pg-card">
+                                <div class="count bg-primary text-white"> 3</div>
+                                <div class="state"> Answered & Marked for review</div>
                               </div>
-                              <div class="card">
-                        
+                              <div class="pg-card ">
+                                    <div class="count bg-success text-white"> 3</div>
+                                    <div class="state">Answered</div>
                                   </div>
           </div>
-          <div class="card-container">
-              <div class="card" *ngFor="let card of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,
+          <div class="pg-card-container">
+              <div class="pg-card" *ngFor="let card of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,
               1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,
               1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,
               1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]">{{card}}</div>
