@@ -9,6 +9,11 @@ import { PlaygroundComponent } from './components/playground/playground.componen
 import { InstructionComponent } from './components/instruction/instruction.component';
 import { MainHeaderComponent } from './components/main-header/main-header.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { LoginComponent } from './login/login.component';
+import { CountdownModule, Config } from 'ngx-countdown';
+import { CountdownConfig } from 'ngx-countdown/src/countdown.config';
+
+
 
 @NgModule({
   declarations: [
@@ -18,11 +23,13 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
     PlaygroundComponent,
     InstructionComponent,
     MainHeaderComponent,
-    SideNavComponent
+    SideNavComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CountdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,16 @@
 <div class="topnav">
         <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
+                <li class="nav-item" *ngFor="let section of master?.exam?.sectionList">
+                  <a class="nav-link" (click)="master.selectSection(section)">{{section.sectionName}}</a>
                 </li>
-               
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" (click)="master.selectSection(section)">
+                  <button  type="submit" class="btn btn-sm btn-dark" >
+                                <countdown [config]="config"></countdown>
+                  </button>         
+                  </a>
                 </li>
+        
                 
-              </ul>
+        </ul>
 </div>

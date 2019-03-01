@@ -1,6 +1,12 @@
 :host {width: 100%;}
+.main-header{
+    height: 100%;
+}
 
-
+.user-info{
+    padding: 5px;
+    border: 1px solid #ddd;
+}
 
 @media screen and (max-width: 600px) {
  
